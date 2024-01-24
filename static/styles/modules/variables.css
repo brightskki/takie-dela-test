@@ -1,0 +1,15 @@
+:root {
+  --graphite-color: #302F2D;
+  --red-color: #E65639;
+  --red-90-color: #b04b36;
+  --red-50-color: #ce9387;
+  --white-color: #ffffff;
+  --gray-47-color: #777777;
+  --gray-85-color: #DCDAD8;
+  --gray-90-color: #E6E6E6;
+  --gray-96-color: #F5F5F5;
+  --gray-98-color: #FAFAFA;
+
+  --text-default: 1rem;
+  --text-lg: 2.5rem;
+}

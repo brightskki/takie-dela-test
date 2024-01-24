@@ -1,0 +1,125 @@
+/* Button */
+.button {
+  text-transform: uppercase;
+  padding: .85rem 2.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: max-content;
+  transition: .2s;
+  background-color: transparent;
+}
+
+.button:disabled {
+  cursor: wait;
+}
+
+.button--primary {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+.button--primary:disabled {
+  background-color: var(--red-50-color);
+}
+
+.button--primary:hover:enabled {
+  background-color: var(--red-90-color);
+}
+
+.button--big {
+  padding: 1.5rem 1rem;
+  width: 100%;
+  border: 1px solid var(--graphite-color)
+}
+
+.button--big:hover:enabled {
+  border-color: var(--gray-85-color);
+}
+
+/* Input */
+.input {
+  padding: 1rem;
+  background-color: var(--white-color);
+  border: 1px solid var(--gray-85-color);
+  font-family: FuturaBook, Tahoma, sans-serif;
+}
+
+.input:active, .input:focus {
+  border-color: var(--graphite-color);
+}
+
+
+
+/* Select */
+.select {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.select__group {
+  display: flex;
+  border: 1px solid var(--gray-85-color);
+}
+
+.select__group >:last-child {
+  padding-right: 1rem;
+}
+
+.select__group--active {
+  border: 1px solid var(--graphite-color);
+}
+
+.select__input {
+  width: 100%;
+  border: none;
+}
+
+.select__button {
+  padding: 0 .25rem;
+  background-color: var(--white-color);
+}
+
+.select-dropdown {
+  position: absolute;
+  top: 100%;
+  width: calc(100% - 2px);
+  background-color: var(--white-color);
+  border: 1px solid var(--graphite-color);
+  border-top: none;
+  font-family: FuturaBook, Tahoma, sans-serif;
+  padding: .5rem 0;
+  z-index: 999;
+}
+
+.select-dropdown__item, .select-dropdown__back {
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.select-dropdown__item:hover, .select-dropdown__back:hover {
+  background-color: var(--gray-96-color);
+}
+
+.select-dropdown__back {
+  color: var(--gray-47-color);
+}
+
+.select-dropdown__item {
+  justify-content: space-between;
+}
+
+/* Arrow */
+.arrow--right {
+  transform: rotate(90deg);
+}
+.arrow--left {
+  transform: rotate(270deg);
+}
+.arrow--bottom {
+  transform: rotate(180deg);
+}
