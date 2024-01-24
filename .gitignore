@@ -1,0 +1,2 @@
+wordpress/app/*
+wordpress/app/!/wp-content/themes/twentytwentyfour/functions.php
